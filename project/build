@@ -1,0 +1,41 @@
+#!/bin/bash
+
+C=""
+P=`pwd`
+## check_permasion that teke from user to delet oll folder
+check_permasion()
+{
+	read C
+	if [[ $C != YES && $C != Y && $C != yes && $C != y && $C != "" ]] 
+	then
+		if [[ $C == NO || $C == N || $C == no || $C == n  ]]
+		then
+			echo "alright next time"
+			exit 0
+		fi
+		check_permasion
+	fi
+}
+
+
+ls -la ~/tools/project/assests/  > /dev/null 2>&1
+if [ $? -ne 0 ]
+then
+	echo "ERROR : FILE NOT FOUND"
+	exit 1
+fi
+echo "ALL files in folder will be deleted expect the git folder"
+echo "yes / no | Y/n ?"
+
+A=`ls | xargs echo -n`
+if [[ $A != "" ]]
+then
+	check_permasion
+fi
+
+cp -r ~/tools/project/assests/* $P
+if [ $? -ne 0 ]
+then
+	echo "ERRORC : Could not COPY project files"
+	exit 2
+fi

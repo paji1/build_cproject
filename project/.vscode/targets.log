@@ -1,0 +1,389 @@
+make all --print-data-base --no-builtin-variables --no-builtin-rules --question
+# GNU Make 4.1
+# Built for x86_64-pc-linux-gnu
+# Copyright (C) 1988-2014 Free Software Foundation, Inc.
+# License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+# This is free software: you are free to change and redistribute it.
+# There is NO WARRANTY, to the extent permitted by law.
+
+# Make data base, printed on Sat Jul  2 19:41:50 2022
+
+# Variables
+
+# automatic
+<D = $(patsubst %/,%,$(dir $<))
+# automatic
+?F = $(notdir $?)
+# environment
+WSLENV = VSCODE_WSL_EXT_LOCATION/up
+# default
+.SHELLFLAGS := -c
+# makefile (from 'Makefile', line 28)
+OBJ = $(addprefix obj/, $(SRC:.c=.o))
+# makefile (from 'Makefile', line 27)
+SRC = main.c
+# makefile (from 'Makefile', line 17)
+HEADERS := 
+# environment
+VSCODE_LOG_NATIVE = false
+# automatic
+?D = $(patsubst %/,%,$(dir $?))
+# automatic
+@D = $(patsubst %/,%,$(dir $@))
+# automatic
+@F = $(notdir $@)
+# makefile
+CURDIR := /home/taha/tools/project
+# makefile (from 'Makefile', line 13)
+SHELL := /bin/bash 
+# makefile (from 'Makefile', line 21)
+RM = rm -rf
+# environment
+VSCODE_NLS_CONFIG = {"locale":"en","availableLanguages":{}}
+# environment
+_ = /home/taha/.vscode-server/bin/30d9c6cd9483b2cc586687151bcbcd635f373630/node
+# makefile (from 'Makefile', line 51)
+x = -1
+# makefile (from 'Makefile', line 1)
+MAKEFILE_LIST :=  Makefile
+# 'override' directive
+GNUMAKEFLAGS := 
+# environment
+W = /mnt/c/Users/Taha/Desktop/
+# environment
+LESS_TERMCAP_se = [0m
+# environment
+VSCODE_VERBOSE_LOGGING = true
+# makefile (from 'Makefile', line 45)
+CODE_RESTORE_CURSOR = '\033[u'
+# makefile (from 'Makefile', line 44)
+CODE_SAVE_CURSOR = '\033[s'
+# environment
+VSCODE_CWD = /mnt/c/Users/Taha/AppData/Local/Programs/Microsoft VS Code
+# default
+MAKE_HOST := x86_64-pc-linux-gnu
+# environment
+PATH = /home/taha/.vscode-server/bin/30d9c6cd9483b2cc586687151bcbcd635f373630/bin/remote-cli:/home/linuxbrew/.linuxbrew/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files (x86)/Intel/Intel(R) Management Engine Components/DAL:/mnt/c/Program Files/Intel/Intel(R) Management Engine Components/DAL:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/CMake/bin:/mnt/c/MinGW/bin:/mnt/c/Program Files (x86)/GnuWin32/bin:/mnt/c/Program Files/PuTTY/:/mnt/c/Program Files (x86)/GNU Arm Embedded Toolchain/10 2021.10/bin:/mnt/c/Users/Taha/AppData/Local/Programs/Python/Python310/Scripts/:/mnt/c/Users/Taha/AppData/Local/Programs/Python/Python310/:/mnt/c/Users/Taha/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/Taha/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/Taha/AppData/Local/Programs/Microsoft VS Code Insiders/bin:/mnt/c/Program Files/JetBrains/PyCharm 2021.3.3/bin
+# environment
+VSCODE_WSL_DEBUG_INFO = true
+# environment
+LESS_TERMCAP_mb = [1;32m
+# environment
+LSCOLORS = Gxfxcxdxbxegedabagacad
+# makefile (from 'Makefile', line 33)
+OBJ_UTILS = $(addprefix obj/utils/, $(SRC_UTILS:.c=.o))
+# environment
+SPACESHIP_VERSION = 3.16.7
+# environment
+VSCODE_LOG_STACK = false
+# default
+.FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver output-sync check-symlink load
+# environment
+LS_COLORS = no=00:fi=00:di=34:ow=34;40:ln=35:pi=30;44:so=35;44:do=35;44:bd=33;44:cd=37;44:or=05;37;41:mi=05;37;41:ex=01;31:*.cmd=01;31:*.exe=01;31:*.com=01;31:*.bat=01;31:*.reg=01;31:*.app=01;31:*.txt=32:*.org=32:*.md=32:*.mkd=32:*.h=32:*.hpp=32:*.c=32:*.C=32:*.cc=32:*.cpp=32:*.cxx=32:*.objc=32:*.cl=32:*.sh=32:*.bash=32:*.csh=32:*.zsh=32:*.el=32:*.vim=32:*.java=32:*.pl=32:*.pm=32:*.py=32:*.rb=32:*.hs=32:*.php=32:*.htm=32:*.html=32:*.shtml=32:*.erb=32:*.haml=32:*.xml=32:*.rdf=32:*.css=32:*.sass=32:*.scss=32:*.less=32:*.js=32:*.coffee=32:*.man=32:*.0=32:*.1=32:*.2=32:*.3=32:*.4=32:*.5=32:*.6=32:*.7=32:*.8=32:*.9=32:*.l=32:*.n=32:*.p=32:*.pod=32:*.tex=32:*.go=32:*.sql=32:*.csv=32:*.sv=32:*.svh=32:*.v=32:*.vh=32:*.vhd=32:*.bmp=33:*.cgm=33:*.dl=33:*.dvi=33:*.emf=33:*.eps=33:*.gif=33:*.jpeg=33:*.jpg=33:*.JPG=33:*.mng=33:*.pbm=33:*.pcx=33:*.pdf=33:*.pgm=33:*.png=33:*.PNG=33:*.ppm=33:*.pps=33:*.ppsx=33:*.ps=33:*.svg=33:*.svgz=33:*.tga=33:*.tif=33:*.tiff=33:*.xbm=33:*.xcf=33:*.xpm=33:*.xwd=33:*.xwd=33:*.yuv=33:*.nef=33:*.NEF=33:*.aac=33:*.au=33:*.flac=33:*.m4a=33:*.mid=33:*.midi=33:*.mka=33:*.mp3=33:*.mpa=33:*.mpeg=33:*.mpg=33:*.ogg=33:*.opus=33:*.ra=33:*.wav=33:*.anx=33:*.asf=33:*.avi=33:*.axv=33:*.flc=33:*.fli=33:*.flv=33:*.gl=33:*.m2v=33:*.m4v=33:*.mkv=33:*.mov=33:*.MOV=33:*.mp4=33:*.mp4v=33:*.mpeg=33:*.mpg=33:*.nuv=33:*.ogm=33:*.ogv=33:*.ogx=33:*.qt=33:*.rm=33:*.rmvb=33:*.swf=33:*.vob=33:*.webm=33:*.wmv=33:*.doc=31:*.docx=31:*.rtf=31:*.odt=31:*.dot=31:*.dotx=31:*.ott=31:*.xls=31:*.xlsx=31:*.ods=31:*.ots=31:*.ppt=31:*.pptx=31:*.odp=31:*.otp=31:*.fla=31:*.psd=31:*.7z=1;35:*.apk=1;35:*.arj=1;35:*.bin=1;35:*.bz=1;35:*.bz2=1;35:*.cab=1;35:*.deb=1;35:*.dmg=1;35:*.gem=1;35:*.gz=1;35:*.iso=1;35:*.jar=1;35:*.msi=1;35:*.rar=1;35:*.rpm=1;35:*.tar=1;35:*.tbz=1;35:*.tbz2=1;35:*.tgz=1;35:*.tx=1;35:*.war=1;35:*.xpi=1;35:*.xz=1;35:*.z=1;35:*.Z=1;35:*.zip=1;35:*.zst=1;35:*.ANSI-30-black=30:*.ANSI-01;30-brblack=01;30:*.ANSI-31-red=31:*.ANSI-01;31-brred=01;31:*.ANSI-32-green=32:*.ANSI-01;32-brgreen=01;32:*.ANSI-33-yellow=33:*.ANSI-01;33-bryellow=01;33:*.ANSI-34-blue=34:*.ANSI-01;34-brblue=01;34:*.ANSI-35-magenta=35:*.ANSI-01;35-brmagenta=01;35:*.ANSI-36-cyan=36:*.ANSI-01;36-brcyan=01;36:*.ANSI-37-white=37:*.ANSI-01;37-brwhite=01;37:*.log=01;32:*~=01;32:*#=01;32:*.bak=01;33:*.BAK=01;33:*.old=01;33:*.OLD=01;33:*.org_archive=01;33:*.off=01;33:*.OFF=01;33:*.dist=01;33:*.DIST=01;33:*.orig=01;33:*.ORIG=01;33:*.swp=01;33:*.swo=01;33:*.v=01;33:*.gpg=34:*.gpg=34:*.pgp=34:*.asc=34:*.3des=34:*.aes=34:*.enc=34:*.sqlite=34:
+# automatic
+%F = $(notdir $%)
+# environment
+DISPLAY = 172.22.112.1:10.0
+# makefile (from 'Makefile', line 37)
+COLOR = '\033[0;32m'
+# environment
+LESS_TERMCAP_me = [0m
+# environment
+VSCODE_PIPE_LOGGING = true
+# environment
+WD = /mnt/c/Users/Taha/Downloads/
+# environment
+VSCODE_IPC_HOOK_CLI = /tmp/vscode-ipc-f0e6983a-460c-42eb-b760-21ecdbac4337.sock
+# environment
+WSL_INTEROP = /run/WSL/11_interop
+# makefile (from 'Makefile', line 43)
+lines = $(shell tput lines)
+# makefile (from 'Makefile', line 40)
+GREEN = '\033[0;32m'
+# environment
+LESS_TERMCAP_ue = [0m
+# environment
+VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
+# environment
+HOME = /home/taha
+# environment
+LOGNAME = taha
+# environment
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
+# environment
+COLOR1 = \033[1;\033[1;31m
+# environment
+ZSH = /home/taha/.oh-my-zsh
+# makefile (from 'Makefile', line 23)
+CFLAG = -pthread -Wall -Werror -Wextra
+# environment
+VSCODE_HANDLES_UNCAUGHT_ERRORS = true
+# automatic
+^D = $(patsubst %/,%,$(dir $^))
+# environment
+LESS_TERMCAP_md = [1;32m
+# environment
+MAKELEVEL := 0
+# default
+MAKE = $(MAKE_COMMAND)
+# default
+MAKECMDGOALS := all
+# environment
+SHLVL = 0
+# environment
+LESS_TERMCAP_so = [01;33m
+# makefile (from 'Makefile', line 22)
+CC = gcc -g
+# default
+MAKE_VERSION := 4.1
+# environment
+USER = taha
+# makefile
+.DEFAULT_GOAL := all
+# makefile (from 'Makefile', line 50)
+NAME = ./philo
+# makefile (from 'Makefile', line 39)
+RE = '\033[0;34m'
+# environment
+COLOR4 = \033[1;\033[1;31m
+# environment
+LESS = -R
+# automatic
+%D = $(patsubst %/,%,$(dir $%))
+# environment
+VSCODE_WSL_EXT_LOCATION = /mnt/c/Users/Taha/.vscode/extensions/ms-vscode-remote.remote-wsl-0.66.3
+# default
+MAKE_COMMAND := make
+# makefile (from 'Makefile', line 38)
+NC = '\033[0m'
+# environment
+COLOR2 = \033[1;\033[1;31m
+# environment
+OLDPWD = /mnt/c/Users/Taha/AppData/Local/Programs/Microsoft VS Code
+# default
+.VARIABLES := 
+# automatic
+*F = $(notdir $*)
+# makefile
+MAKEFLAGS = pqrR
+# environment
+MFLAGS = -pqrR
+# automatic
+*D = $(patsubst %/,%,$(dir $*))
+# environment
+LESS_TERMCAP_us = [1;4;31m
+# automatic
++D = $(patsubst %/,%,$(dir $+))
+# makefile (from 'Makefile', line 41)
+YELLOW = '\033[0;33m'
+# automatic
++F = $(notdir $+)
+# environment
+VSCODE_HANDLES_SIGPIPE = true
+# default
+MAKEFILES := 
+# automatic
+<F = $(notdir $<)
+# makefile (from 'Makefile', line 46)
+CODE_CURSOR_IN_SCROLL_AREA = "\033[1A"
+# environment
+PAGER = less
+# environment
+PWD = /home/taha/tools/project
+# environment
+LC_ALL = C
+# environment
+HOSTTYPE = x86_64
+# environment
+SPACESHIP_ROOT = /home/taha/.oh-my-zsh/custom/themes/spaceship-prompt
+# automatic
+^F = $(notdir $^)
+# default
+SUFFIXES := 
+# default
+.INCLUDE_DIRS = /usr/include /usr/local/include /usr/include
+# makefile (from 'Makefile', line 32)
+SRC_UTILS = 
+# default
+.RECIPEPREFIX := 
+# environment
+LANG = C
+# environment
+TERM = xterm-256color
+# environment
+VSCODE_EXTHOST_WILL_SEND_SOCKET = true
+# environment
+WSL_DISTRO_NAME = Ubuntu-18.04
+# environment
+COLOR3 = \033[1;\033[1;31m
+# variable set hash-table stats:
+# Load=103/1024=10%, Rehash=0, Collisions=16/152=11%
+
+# Pattern-specific Variable Values
+
+# No pattern-specific variable values.
+
+# Directories
+
+# . (device 2064, inode 118330): 8 files, no impossibilities.
+# src (device 2064, inode 118337): 3 files, no impossibilities so far.
+
+# 11 files, no impossibilities in 2 directories.
+
+# Implicit Rules
+
+obj/%.o: src/%.c
+#  recipe to execute (from 'Makefile', line 66):
+	@ mkdir -p obj
+	@ mkdir -p obj/utils
+	@ $(CC) $(CFLAG) -c $< -o $@
+	@tput civis
+	$(eval x=$(x)+1)
+	@ printf $(notdir $@)"\n"
+	@ printf  ${CODE_SAVE_CURSOR}""
+	@ printf "\033[$(lines);0f"
+	@ sleep 0.05
+	@number=$x ; while [[ $$number -ge 0 ]] ; do \
+        printf ${YELLOW}"🟩"${NC}  ;\
+        ((number = number - 1)) ; \
+    done
+	@printf  ${CODE_RESTORE_CURSOR}""
+	@printf  ${CODE_CURSOR_IN_SCROLL_AREA}""
+	@printf  ${CODE_SAVE_CURSOR}""
+	@printf ${RE}"🔷 Making the  --> "${NC} 
+	@tput el
+
+# 1 implicit rules, 0 (0.0%) terminal.
+
+# Files
+
+all: philo
+#  Command line target.
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/13=0%
+
+philo: obj/main.o
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: ''
+#  File does not exist.
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# automatic
+# @ := philo
+# automatic
+# % := 
+ 
+# automatic
+# * := 
+# automatic
+# + := obj/main.o
+# automatic
+# | := 
+# automatic
+# < := obj/main.o
+# automatic
+# ^ := obj/main.o
+# automatic
+# ? := obj/main.o
+# variable set hash-table stats:
+# Load=8/32=25%, Rehash=0, Collisions=10/21=48%
+#  recipe to execute (from 'Makefile', line 58):
+	@printf  ${CODE_RESTORE_CURSOR}""
+	@tput el
+	@ printf ${GREEN}"\rMaking is done ✅\n"${NC}
+	@ tput cvvis
+	@ $(CC) $(CFLAG) $(OBJ) $(OBJ_UTILS) -o $(NAME)
+
+obj/main.o: src/main.c
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'main'
+#  Last modified 2022-07-02 19:38:15.872757
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 66):
+	@ mkdir -p obj
+	@ mkdir -p obj/utils
+	@ $(CC) $(CFLAG) -c $< -o $@
+	@tput civis
+	$(eval x=$(x)+1)
+	@ printf $(notdir $@)"\n"
+	@ printf  ${CODE_SAVE_CURSOR}""
+	@ printf "\033[$(lines);0f"
+	@ sleep 0.05
+	@number=$x ; while [[ $$number -ge 0 ]] ; do \
+        printf ${YELLOW}"🟩"${NC}  ;\
+        ((number = number - 1)) ; \
+    done
+	@printf  ${CODE_RESTORE_CURSOR}""
+	@printf  ${CODE_CURSOR_IN_SCROLL_AREA}""
+	@printf  ${CODE_SAVE_CURSOR}""
+	@printf ${RE}"🔷 Making the  --> "${NC} 
+	@tput el
+
+# Not a target:
+.SUFFIXES:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+Makefile:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-02 19:38:15.872757
+#  File has been updated.
+#  Successfully updated.
+
+fclean: clean
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 90):
+	@ $(RM) $(NAME)
+
+# Not a target:
+src/main.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-02 19:38:15.872757
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+.DEFAULT:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+re: fclean all
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+clean:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 86):
+	@ $(RM) $(OBJ)
+	@ $(RM) $(OBJ_UTILS)
+
+# files hash-table stats:
+# Load=10/1024=1%, Rehash=0, Collisions=0/31=0%
+# VPATH Search Paths
+
+# No 'vpath' search paths.
+
+# No general ('VPATH' variable) search path.
+
+# strcache buffers: 1 (0) / strings = 23 / storage = 184 B / avg = 8 B
+# current buf: size = 8162 B / used = 184 B / count = 23 / avg = 8 B
+
+# strcache performance: lookups = 42 / hit rate = 45%
+# hash-table stats:
+# Load=23/8192=0%, Rehash=0, Collisions=2/42=5%
+# Finished Make data base on Sat Jul  2 19:41:50 2022
+
+ 

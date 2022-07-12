@@ -1,0 +1,26 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory '/home/taha/tools/project'
+mkdir -p obj
+mkdir -p obj/utils
+gcc -g -pthread -Wall -Werror -Wextra -c src/main.c -o obj/main.o
+tput civis
+printf main.o"\n"
+printf  '\033[s'""
+printf "\033[1;0f"
+sleep 0.05
+number=-1+1 ; while [[ $number -ge 0 ]] ; do \
+        printf '\033[0;33m'"🟩"'\033[0m'  ;\
+        ((number = number - 1)) ; \
+    done
+printf  '\033[u'""
+printf  "\033[1A"""
+printf  '\033[s'""
+printf '\033[0;34m'"🔷 Making the  --> "'\033[0m' 
+tput el
+printf  '\033[u'""
+tput el
+printf '\033[0;32m'"\rMaking is done ✅\n"'\033[0m'
+tput cvvis
+gcc -g -pthread -Wall -Werror -Wextra obj/main.o  -o ./philo
+make: Leaving directory '/home/taha/tools/project'
+ 
