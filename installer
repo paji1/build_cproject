@@ -1,6 +1,5 @@
 #!/bin/bash
 
-ls -la ~/tools/project/assests/  > /dev/null 2>&1
 
 
 
@@ -16,12 +15,14 @@ error()
 
 
 
+ls -la ~/tools > /dev/null 2>&1
 if [ $? -ne 0 ]
 then
-	mkdir -p ~/tools/project/assests
+	mkdir -p ~/tools
 fi
 
 # Copying the project to tools directory
-cp -r ./project/ ~/tools > /dev/null 2>&1
+cp -r ./project/* ~/tools > /dev/null 2>&1
+
 error $?
 
