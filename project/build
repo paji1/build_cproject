@@ -1,5 +1,14 @@
 #!/bin/bash
 
+error()
+{
+	if [ $1 -ne 0 ]
+	then
+		echo "ERROR : $2"
+		exit 3
+	fi
+}
+
 C=""
 P=`pwd`
 ## check_permasion that teke from user to delet oll folder
@@ -19,12 +28,8 @@ check_permasion()
 
 
 ls -la ~/tools/project/assests/  > /dev/null 2>&1
-if [ $? -ne 0 ]
-then
-	echo "ERROR : FILE NOT FOUND"
-	exit 1
-fi
-echo "ALL files in folder will be deleted expect the git folder"
+error $? "FILE not found"
+echo "All files in folder will be deleted expect the hidden files"
 echo "yes / no | Y/n ?"
 
 A=`ls | xargs echo -n`
@@ -33,9 +38,11 @@ then
 	check_permasion
 fi
 
-cp -r ~/tools/project/assests/* $P
-if [ $? -ne 0 ]
-then
-	echo "ERRORC : Could not COPY project files"
-	exit 2
-fi
+# remove the files in directory
+find -not -path '*/.*' -delete > /dev/null 2>&1
+error $? "remove files in directory failed"
+
+
+# copy assests to the project directory
+cp -r ~/tools/project/assests/* $P > /dev/null 2>&1
+error $? "copy assests failed"
