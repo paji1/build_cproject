@@ -26,6 +26,7 @@ error $? "Copying the project to tools directory failed"
 cat ~/.zshrc | grep "alias build" > /dev/null 2>&1
 if [ $? -ne 0 ]
 then
-	echo "alias build=\"bash ~/tools/project/build.bash\"" >> ~/.zshrc
+	echo "alias build=\"bash ~/tools/project/build\"" >> ~/.zshrc
 	error $? "Adding alias to zshrc failed"
 fi
+exec zsh
