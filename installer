@@ -7,14 +7,11 @@ error()
 {
 	if [ $1 -ne 0 ]
 	then
-		echo "Copying the project to tools directory failed"
+		echo "ERROR : $2"
 		exit 3
 	fi
 }
-
-
-
-
+# This function is called by 
 ls -la ~/tools > /dev/null 2>&1
 if [ $? -ne 0 ]
 then
@@ -22,7 +19,13 @@ then
 fi
 
 # Copying the project to tools directory
-cp -r ./project/* ~/tools > /dev/null 2>&1
+cp -r ./project/ ~/tools > /dev/null 2>&1
+error $? "Copying the project to tools directory failed"
 
-error $?
-
+# put alias in zshrc
+cat ~/.zshrc | grep "alias build" > /dev/null 2>&1
+if [ $? -ne 0 ]
+then
+	echo "alias build=\"bash ~/tools/project/build.bash\"" >> ~/.zshrc
+	error $? "Adding alias to zshrc failed"
+fi
